@@ -1,0 +1,177 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+
+@font-face {
+    font-family: "tabitha";
+    src: url("tabitha.ttf");
+}
+
+:root{
+    --color-primario: rgb(153, 230, 245);
+    --color-secundario: rgb(206, 227, 245);
+    --color-text: rgb(0, 142, 166);
+    --color-text-secundario: rgb(0, 142, 225);
+    --color-text-main: blue;
+
+}
+
+/* style header */
+
+.header{
+    width: 100%;
+    height: 10rem;
+    background-color: var(--color-primario);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* style logo */
+.header__div{
+    height: 100%;
+    font-family: "tabitha";
+    color: var(--color-text);
+}
+
+.header__div--logo {
+    height: auto;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+.header__div--img{
+    width: 18%;
+    height: 75%;
+    margin: 1rem;
+    border-radius: 25%;
+}
+
+.header__div--logo:hover{
+    color: var(--color-text-secundario);
+    font-size: 2.1rem;
+}
+
+/* style nav header */
+.header__nav{
+    display: flex;
+    align-items: center;
+}
+
+.header__nav--link{
+    margin: .5rem;
+    padding: .3rem;
+    margin-right: 2rem;
+    border-radius: 15%;
+    height: auto;
+    font-size: 1.6rem;
+    background-color: var(--color-secundario, 0.9) ;
+    text-decoration: none;
+    color: var(--color-text);
+}
+
+.header__nav--link:hover {
+    color: var(--color-text-secundario);
+    font-size: 1.8rem;
+}
+
+/* style main */
+main{
+    display: flex;
+    color: var(--color-text-main);
+    position: relative;
+}
+
+.background{
+    width: 100%;
+    height: 100%;
+    background-size: 10%;
+    background-image: url(../style-agenda/Screenshot\ 2023-04-22\ 223330.png);
+    position: absolute;
+}
+
+main > .layover{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+/* style container */
+.container{
+    width: 100%;
+    height: 70vh;
+    font-size: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+}
+
+/* style comuni */
+.container__img, .container__form{
+    width: 40%;
+    height: 100%;
+    /* background-color: var(--color-secundario, 0.5); por que no funciona???? */
+    background-color: rgb(206, 227, 245, 0.5);
+    padding: 3rem;
+
+}
+
+/* style especificos */
+.container__img > h3{
+    text-align: center;
+    margin: 1rem;
+    font-size: 3rem;
+}
+
+.img_1 > img{
+    width: 50%;
+    border-radius: 0 25%;
+    float: right;
+    
+}
+
+.container__form > h3{
+    text-align: center;
+    margin: 3rem;
+    font-size: 4rem;
+}
+
+.container__form > p{
+    text-align: justify;
+    margin: 3rem;
+} 
+
+/* solucion de mejorar */
+.form_1 > label{
+    padding: 2rem;
+    margin: 9rem;
+    background-color: var(--color-primario, 0.6);
+    border-radius: 2rem;
+}
+
+
+
+/* style footer */
+.footer{
+    width: 100%;
+    height: 15vh;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    background-color: var(--color-primario);
+    position: relative;
+}
+
+.footer__p{
+    color: var(--color-text-main);
+    width: 40%;
+    margin: auto 15%;
+}

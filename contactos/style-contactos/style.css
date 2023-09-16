@@ -51,20 +51,3 @@
 
 }
 
-
-
-/* style footer */
-.footer{
-    width: 100%;
-    height: 15vh;
-    font-size: 1.5rem;
-    display: flex;
-    justify-content: center;
-    background-color: var(--color-primario);
-}
-
-.footer__p{
-    color: var(--color-text-main);
-    width: 40%;
-    margin: auto 15%;
-}

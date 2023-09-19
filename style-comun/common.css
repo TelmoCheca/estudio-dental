@@ -182,7 +182,12 @@ main > .layover{
 
 /* style nav header */
 .header__nav{
-    display: none;
+    width: 100%;
+    display: flex;
+    position: absolute;
+    top: 18%;
+    background-color: var(--color-text-secundario);
+    flex-direction: column;
     align-items: center;
 }
 
@@ -211,5 +216,9 @@ main > .layover{
     display: inline-block;
     background-color: var(--color-secundario, 0.9);
     color: var(--color-text-secundario);
+}
+
+main{
+    margin-top: 40rem;
 }
 }

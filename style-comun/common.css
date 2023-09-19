@@ -78,7 +78,7 @@ html{
 
 .header__nav--link:hover {
     color: var(--color-text-secundario);
-    font-size: 1.8rem;
+    font-size: 1.5rem;
 }
 
 .header_menu{
@@ -134,3 +134,82 @@ main > .layover{
     margin: auto 15%;
 }
 
+@media (max-width: 320px){
+    /* style header */
+
+.header{
+    width: 100%;
+    height: 20%;
+    background-color: var(--color-primario);
+    display: flex;
+    justify-content: space-between;
+}
+
+/* style logo */
+.header__div{
+    width: 47%;
+    margin: auto 0;
+    height: auto;
+    font-family: "tabitha";
+    color: var(--color-text);
+}
+
+.header__div--logo {
+    height: 70%;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.header__div--img{
+    width: 40%;
+    height: 67%;
+    margin: 1rem;
+    border-radius: 25%;
+}
+
+.header__div--logo:hover{
+    color: var(--color-text-secundario);
+    font-size: 1.5rem;
+    transition: 0.3s;
+}
+
+.header__nav--link:hover {
+    color: var(--color-text-secundario);
+    font-size: 1.5rem;
+}
+
+/* style nav header */
+.header__nav{
+    display: none;
+    align-items: center;
+}
+
+.header__nav--link{
+    margin: .5rem;
+    padding: .3rem;
+    margin-right: 2rem;
+    border-radius: 15%;
+    height: auto;
+    font-size: 1.6rem;
+    background-color: var(--color-secundario, 0.9);
+    text-decoration: none;
+    color: var(--color-text);
+}
+
+.header__nav--link:hover {
+    color: var(--color-text-secundario);
+}
+
+.header_menu{
+    width: 5rem;
+    font-size: 2.5rem;
+    padding: 5px;
+    margin: auto 2.5rem;
+    cursor: pointer;
+    display: inline-block;
+    background-color: var(--color-secundario, 0.9);
+    color: var(--color-text-secundario);
+}
+}
